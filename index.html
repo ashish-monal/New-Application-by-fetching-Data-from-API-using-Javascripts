@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Application</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fad38453fd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--  Heading Of Application  -->
+    <h1 style="text-align: center" class="heading1">Daily New Application</h1>
+
+    <!-- Adding categories to The Application  -->
+    <header>
+      <ul class="categories">
+        <li onclick="General()"><i class="fa-solid fa-house"></i>General</li>
+        <li onclick="business()">
+          <i class="fa-solid fa-business-time"></i>Business
+        </li>
+        <li onclick="entertainment()">
+          <i class="fa-brands fa-tiktok"></i> Entertainment
+        </li>
+        <li onclick="health()">
+          <i class="fa-solid fa-notes-medical"></i>Health
+        </li>
+        <li onclick="science()">
+          <i class="fa-solid fa-microscope"></i>Science
+        </li>
+        <li onclick="sports()"><i class="fa-solid fa-volleyball"></i>Sports</li>
+        <li onclick="technology()">
+          <i class="fa-solid fa-microchip"></i>Technology
+        </li>
+      </ul>
+    </header>
+
+    <!-- Heading For Top Headlines -->
+
+    <h1 class="heading">Top Headlines</h1>
+
+    <!-- Creating Main Container card for News Data -->
+
+    <div class="container" id="main">
+      <div class="box-container" id="data">
+        <div class="box">
+          <!-- Image container -->
+          <div class="image">
+            <img src="./image/img1.png" alt="new_image" />
+          </div>
+
+          <!-- Content Container for title Description Read More Button Date and Author Name -->
+          <div class="content">
+            <!-- Title -->
+            <h3>New Title</h3>
+
+            <!-- Description -->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi
+              iusto iste odit ipsum expedita assumenda laudantium nisi, aliquid
+              eveniet maiores minima vero non deserunt officiis ut facilis?
+              Repudiandae, laboriosam?
+            </p>
+            <!-- Closing of Description -->
+
+            <!-- Read More Button  -->
+            <a href="#" class="btn" target="_blank">Read More</a>
+            <!-- close of Read More Button  -->
+
+            <!-- Creating Div for Date and Author Details -->
+            <div class="icon">
+              <span> <i class="fa-solid fa-calendar"></i>10-10-2022</span>
+              <span> <i class="fa-solid fa-user"></i>10-10-2022</span>
+            </div>
+            <!-- closing of Creating Div for Date and Author Details -->
+          </div>
+          <!-- closing of  Content Container for title Description Read More Button Date and Author Name -->
+        </div>
+      </div>
+    </div>
+    <!-- <div id="load-more" onclick="">Load More</div> -->
+
+    <!-- adding previous page and Next page Button in Application -->
+
+    <nav>
+      <ul class="pagination">
+        <li class="page-item">
+          <button class="page-link" id="prevButton">
+            <i class="fa-solid fa-backward"></i>Previous
+          </button>
+        </li>
+        <li class="page-item">
+          <button class="page-link" id="nextButton">
+            <i class="fa-solid fa-forward-fast"></i>Next
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- close of adding previous page and Next page Button in Application -->
+
+    <!-- Adding Footer Section  -->
+    <footer class="footer">
+      <div class="social-media-link">
+        <i class="fa-brands fa-square-instagram fa-4x"></i>
+        <i class="fa-brands fa-facebook fa-4x"></i>
+        <i class="fa-brands fa-twitter fa-4x"></i>
+        <i class="fa-brands fa-linkedin fa-4x"></i>
+      </div>
+      <p>News API &copy; 2022, All Right Reserved</p>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- link javascripts file to HTMl -->
+    <script src="./javascripts/script2.js"></script>
+  </body>
+</html>
